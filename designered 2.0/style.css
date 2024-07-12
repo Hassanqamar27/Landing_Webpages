@@ -1,0 +1,114 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+#main{
+    display: flex;
+    height: 100%;
+    width: 100%;
+}
+#left{
+    position: relative;
+    height: 100%;
+    width: 40%;
+}
+#lnav{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 20px 30px;
+}
+#lnavr{
+    display: flex;
+    align-items: center;
+}
+#lnavr i{
+    color: #249EF0;
+}
+#left #textCenter{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+#textCenter h1{
+    font-size: 90px;
+    font-weight: 900;
+}
+#textCenter p{
+    opacity: .6;
+    font-size: 12px;
+    line-height: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+#textCenter a{
+    text-decoration: none;
+    color: #000;
+    border-bottom: 1px solid #000;
+    padding: bottom 5px;
+    font-size: 13px;
+    font-weight: 600;
+    opacity: .6;
+}
+#lnavr a{
+    margin-right: 20px;
+    text-decoration: none;
+    color: #000;
+    font-weight: 500;
+    font-size: 14px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#right{
+    height: 100%;
+    width: 60%;
+}
+#rtop{
+    display: flex;
+    width: 100%;
+    height: 50%;
+    background: #000;
+}
+
+
+
+#rtopright{
+    width: 45%;
+    height: 100%;
+    background: url(https://images.unsplash.com/photo-1586788224331-947f68671cf1?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+    background-position: bottom;
+}
+#rtopleft{
+    width: 55%;
+    height: 100%;
+    background: url(https://images.unsplash.com/photo-1557800636-894a64c1696f?q=80&w=1965&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+    background-position: center;
+}
+#rbottom{
+    width: 100%;
+    height: 50%; 
+    background: url(https://images.unsplash.com/photo-1619241638225-14d56e47ae64?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+    background-position:center;
+    
+}
+@media(max-width: 500px){
+    #main{
+        flex-direction: column ;
+    }
+    #main #left {
+        width: 100%;
+    }
+    #main #right {
+        width: 100%;
+    }
+}
